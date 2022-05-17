@@ -5,6 +5,7 @@
   height: 400px;
 }
 .avatar{
+  margin-top:120px ;
   display: flex;
   justify-content:center;
   
