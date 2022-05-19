@@ -9,6 +9,9 @@
 .existing-tweet-article{
 width: 100%;
 }
+#tweets-container{
+  width: 100%;
+}
 .existing-tweet-footer{
   display: flex;
   padding: 10px;
