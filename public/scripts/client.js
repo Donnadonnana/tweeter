@@ -62,13 +62,19 @@ $('#submit-button').submit(function (event) {
   console.log('tweet submit!');
   console.log($tweetText);
   event.preventDefault();
-  $.ajax({
+  if (!$('#tweet-text').val()) {
+    alert('Tweet can not be empty');
+    return;
+  }
+  else {
+    $.ajax({
     url: 'http://localhost:8080/tweets',
     method: 'POST',
     data:$tweetText
   }).then((res)=> {
     console.log(res);
 })
+  }  
 })
 
 const loadtweets = () => {
