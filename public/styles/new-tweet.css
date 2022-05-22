@@ -30,3 +30,17 @@ justify-content: space-between;
   font-family: 'Bungee',
     cursive;
 }
+#error-message{
+  display: none;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  
+}
+.fa-solid.fa-triangle-exclamation{
+  color:red;
+}
+#error-p{
+  padding:0px;
+  margin:0px;
+  color: red;
+}

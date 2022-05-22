@@ -79,10 +79,15 @@ $('#submit-button').submit(function (event) {
   console.log($tweetText);
   event.preventDefault();
   if (!$('#tweet-text').val()) {
-    alert('Tweet can not be empty');
+    $('#error-message').css('display', 'flex');
+    $('#error-p').html('Tweetes can not be empty!')
     return;
-  }
-  else {
+  } else if ($('#tweet-text').val().length > 140) {   
+    $('#error-message').css('display', 'flex');
+    $('#error-p').html('Too Long! Please enter within 140 characters!')
+    return;
+  } else {
+    $('#error-message').css('display', 'none');
     $.ajax({
     url: 'http://localhost:8080/tweets',
     method: 'POST',
@@ -96,3 +101,4 @@ $('#submit-button').submit(function (event) {
 
 
 loadtweets();
+

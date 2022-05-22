@@ -71,6 +71,11 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
+        <div id="error-message">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <p id="error-p"></p>
+          <i class="fa-solid fa-triangle-exclamation"></i>
+        </div>
         <form action="/tweets" method="POST" id="submit-button">
           <textarea placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>
           <div class="tweet-footer">
@@ -81,35 +86,6 @@
       </section>
       <!-- tweets-contaniter section -->
       <section id="tweets-container">
-
-         <!-- <section class="existing-tweet">
-            <article class="existing-tweet-article">
-               <header> 👧  Applepie </header>
-               <p>hello, my name is Apple, I like applepie!</p>
-              <footer class="existing-tweet-footer">10 days ago
-                <div>
-                  <i class="fa-solid fa-flag"></i>
-                  <i class="fa-solid fa-retweet"></i>
-                  <i class="fa-solid fa-heart"></i>
-                </div>
-              </footer>
-            </article>
-      </section> -->
-
-      <!-- <section class="existing-tweet">
-        <article class="existing-tweet-article">
-          <header> 👦 Banana </header>
-          <p>hello, my name is Banana, I like Canada!</p>
-          <footer class="existing-tweet-footer">20 days ago
-            <div>
-              <i class="fa-solid fa-flag"></i>
-              <i class="fa-solid fa-retweet"></i>
-              <i class="fa-solid fa-heart"></i>
-            </div>
-          </footer>
-        </article>
-      </section> -->
-
       </section>
     </main>
   </body>
