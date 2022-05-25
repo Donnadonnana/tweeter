@@ -57,36 +57,38 @@
          <i class="fa-solid fa-angles-down"></i>
         </span>  
     </nav>
-    
-    <header id="header-of-the-page">
-      <div class="avatar">
-        <img src="./images/profile-hex.png" id="header-image">
-      </div>
-      <br>
-      <div class="avatar-name">
-        <h2>Donna Huang</h2>
-      </div>
-    </header>
+    <section id="app-container">
+          <header id="header-of-the-page">
+            <div class="avatar">
+              <img src="./images/profile-hex.png" id="header-image">
+            </div>
+            <br>
+            <div class="avatar-name">
+              <h2>Donna Huang</h2>
+            </div>
+          </header>
+          
+          <!-- Page-specific (main) content here -->
+          <main class="container">
+            <section class="new-tweet">
+              <div id="error-message">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <p id="error-p"></p>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+              </div>
+              <form action="/tweets" method="POST" id="submit-button">
+                <textarea placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>
+                <div class="tweet-footer">
+                  <button type="submit" class="submit-tweet-button">Tweet</button>
+                  <output name="counter" class="counter" for="tweet-text" id="counter-number">140</output>
+                </div>
+              </form>
+            </section>
+            <!-- tweets-contaniter section -->
+            <section id="tweets-container">
+            </section>
+          </main>
+    </section>
 
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <div id="error-message">
-          <i class="fa-solid fa-triangle-exclamation"></i>
-          <p id="error-p"></p>
-          <i class="fa-solid fa-triangle-exclamation"></i>
-        </div>
-        <form action="/tweets" method="POST" id="submit-button">
-          <textarea placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>
-          <div class="tweet-footer">
-            <button type="submit" class="submit-tweet-button" >Tweet</button>
-            <output name="counter" class="counter" for="tweet-text" id="counter-number">140</output>
-          </div>
-        </form>
-      </section>
-      <!-- tweets-contaniter section -->
-      <section id="tweets-container">
-      </section>
-    </main>
   </body>
 </html>
