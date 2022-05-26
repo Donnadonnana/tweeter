@@ -64,6 +64,7 @@ $('#submit-button').submit(function (event) {
   }).then((res)=> {
     loadtweets();
     $('#tweet-text').val("");
+    $('#counter-number').val('140');
 })
   }  
 })

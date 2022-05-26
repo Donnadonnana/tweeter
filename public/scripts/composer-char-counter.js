@@ -12,6 +12,6 @@ $(document).ready(() => {
        $('#counter-number').css('color', 'black');
     }
   })
- 
+  
 })
 
